@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+}
+main {
+  width: 100%;
+  height: 100vh;
+  background-color: #1d2026;
+}
+nav {
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+.menu {
+  width: 4%;
+}
+.logo {
+  width: 15%;
+  margin-left: 2rem;
+}
+nav ul {
+  margin-left: 33rem;
+}
+nav ul li {
+  display: inline-block;
+  flex-direction: row;
+  flex: 1;
+  margin-left: 1.5rem;
+}
+nav a {
+  text-decoration: none;
+}
+.btn {
+  margin-left: 15rem;
+  width: 7%;
+  background-color: #efefef;
+  border-radius: 5rem;
+  padding: 0.5rem;
+  outline: none;
+  border: 0;
+  cursor: pointer;
+  transition: background 0.5s;
+}
+.btn-span {
+  display: block;
+  background-color: #999;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  transition: background 0.5s, margin-left 0.5s;
+}
+.lamp-holder {
+  /* position: absolute; */
+  margin-left: 9rem;
+  margin-top: -34rem;
+}
+.lamp {
+  width: 10rem;
+  margin-left: 23rem;
+  margin-top: 22rem;
+  position: absolute;
+}
+.light {
+  width: 48%;
+  /* transform: translateX(5%); */
+  margin-top: 41rem;
+  margin-left: 4.5rem;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.latest {
+  display: block;
+  margin-left: 58rem;
+  margin-top: -25rem;
+}
+.lighting {
+  font-size: 4rem;
+  margin: 1rem 0;
+}
+.check {
+  width: 30%;
+  height: 10%;
+  border-radius: 3rem;
+  background-color: #00986f;
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+}
+.control {
+  display: flex;
+  align-items: center;
+  /* justify-content: flex-end; */
+  margin-top: 4rem;
+  margin-left: 10rem;
+}
+.line {
+  width: 250px;
+  height: 4px;
+  background-color: #fff;
+  margin: 0 20px;
+}
+.line span {
+  width: 50%;
+  height: 8px;
+  margin-top: -2px;
+  border-radius: 4px;
+  background-color: #00986f;
+  display: block;
+}
+.active {
+  background-color: green;
+}
+.active span {
+  background-color: #fff;
+  margin-left: 4.5rem;
+}
+.on {
+  opacity: 1;
+}
+.blue {
+  background-color: red;
+}
+.green {
+  background-color: #00986f;
+}
+@media (max-width: 620px) {
+  main {
+    display: block;
+  }
+  nav {
+    display: block;
+  }
+  nav ul {
+    margin-top: -1rem;
+  }
+  nav ul li {
+    margin-left: -10rem;
+    display: block;
+  }
+  .btn {
+    display: inline-block;
+    margin-left: 23rem;
+    /* position: absolute; */
+    width: 20%;
+    padding: 1rem;
+  }
+  .btn-span {
+    position: absolute;
+    width: 4%;
+    height: 3%;
+    margin-top: -0.8rem;
+    margin-left: -1rem;
+    transition: background 0.5s, margin-left 0.5s;
+  }
+  .lamp {
+    margin-left: 4rem;
+    width: 20%;
+  }
+  .light {
+    width: 70%;
+    margin-left: -4rem;
+    top: -32.8rem;
+    position: absolute;
+  }
+  .latest {
+    font-size: 16px;
+    position: absolute;
+    margin-left: -10rem;
+    margin-top: 2rem;
+    max-width: 600px;
+  }
+  .control {
+    margin-top: 45rem;
+    margin-left: 25rem;
+  }
+  .line {
+    width: 60%;
+  }
+
+  .active {
+    background-color: green;
+  }
+  .active span {
+    background-color: #fff;
+    margin-left: 2.5rem;
+  }
+  .on {
+    opacity: 1;
+  }
+}
